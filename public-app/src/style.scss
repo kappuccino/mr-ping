@@ -1,0 +1,50 @@
+$green-0: #b8e150;
+$green-1: #aed54c;
+$green-3: #7a9435;
+
+$brown-0: #d8c1b5;
+$brown-3: #7f6560;
+
+:root{
+  --graph-width: 600px;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.text-right{
+  text-align: right;
+}
+
+//-----------------------------------------------
+
+.app{
+  display: grid;
+  grid-template-columns: 1fr 1fr 900px;
+  gap: 1rem;
+}
+
+.hosts,
+.dates,
+.detail{
+  border: 1px solid #404040;
+
+  ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li{
+    padding: 5px;
+
+    &.active{
+      background: $green-1;
+    }
+  }
+
+  li + li{
+    border-top: 1px solid #404040;
+  }
+}
